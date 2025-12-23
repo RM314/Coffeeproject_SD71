@@ -156,6 +156,66 @@ p:first-child {
   background-color: green;
 }
 
+/* Blog Section */
+.blog {
+  padding: 50px 40px;
+  font-size: medium;
+}
+
+.blog h2 {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3em;
+  color: black;
+  background-color: white;
+  border: #ffeddd 3px solid;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog img {
+  width: 100%; height: 260px;
+
+  border-radius: 2px;
+  box-shadow: -5px 5px 2px rgb(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.blog-post {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1rem;
+
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: -5px 5px 2px rgb(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.blog-post p {
+  font-weight: normal;
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.blog-post a {
+  font-weight: bold;
+  font-size: small;
+  color: black;
+  text-decoration: none;
+}
 .store {
   background-color: #b5d8b3;
    /*position: relative;*/
