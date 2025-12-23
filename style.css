@@ -9,6 +9,80 @@ body {
   font-size: 24px;
 }
 
+/*hero section*/
+.hero {
+  min-height: 90vh;
+  padding: 4rem 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: linear-gradient(
+      to right,
+      rgba(193, 225, 191, 0.95),
+      rgba(193, 225, 191, 0.85),
+      rgba(193, 225, 191, 0.6),
+      rgba(193, 225, 191, 0.2)
+    ),
+    url("./assets/our-coffee.jpg");
+
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+/* Title */
+#heading {
+  font-size: 4rem;
+  width: fit-content;
+  background: #ffffff;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Subheading */
+.subheading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  max-width: 500px;
+  margin-bottom: 1.2rem;
+}
+
+/* Paragraph */
+.normal_text {
+  font-size: 1rem;
+  color: #1f1f1f;
+  max-width: 520px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* CTA Button */
+.bigblacklink {
+  display: inline-block;
+  width: fit-content;
+
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 0.9rem 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.bigblacklink:hover {
+  background-color: #222;
+}
+
 /* General section styling */
 .featured-deals-container {
   position: relative;
@@ -36,7 +110,6 @@ p:first-child {
   justify-content: center;
   align-items: center;
 }
-
 
 /* Styling for the title above the slider */
 .special-deals-title {
@@ -69,14 +142,16 @@ p:first-child {
 }
 
 .slide img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   padding: 5px;
 }
 
 /* Common styling for both previous and next navigation buttons */
-.deal-button-prev, .deal-button-next {
+.deal-button-prev,
+.deal-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -85,7 +160,8 @@ p:first-child {
   color: white;
   border: none; /* Remove default button borders */
 
-  width: 40px; height: 40px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   z-index: 1;
   border-radius: 50%;
