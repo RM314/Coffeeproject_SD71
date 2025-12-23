@@ -9,6 +9,103 @@ body {
   font-size: 24px;
 }
 
+/*our coffee section*/
+.coffee-section {
+  padding: 80px 20px;
+  background-color: #a8c9b0;
+}
+
+
+.coffee-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Left side - Image with L-shaped white border (left 90% + bottom full) */
+.coffee-media {
+  flex: 1;
+  position: relative;
+  max-width: 450px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+/* Left white border - 90% height only */
+.coffee-media::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25px; /* Same as padding-left */
+  height: 90%; /* 90% of image height - gap at top! */
+  background-color: white;
+  z-index: 0;
+}
+
+/* Bottom white border - full width */
+.coffee-media::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background-color: white;
+  z-index: 0;
+}
+
+.coffee-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.play-button:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Right side - Content */
+.coffee-text {
+  flex: 1;
+}
+
+.coffee-text h2 {
+  font-size: 4rem;
+  width: fit-content;
+  background: #ffffff;
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 0.3rem 1rem;
+  font-family: "Playfair Display", serif;
+  color: #000;
+  text-align: right;
+}
+
+.coffee-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #1f1f1f;
+  text-align: right;
+  max-width: 500px;
+  margin: 0 auto;
+}
 /* General section styling */
 .featured-deals-container {
   position: relative;
@@ -36,7 +133,6 @@ p:first-child {
   justify-content: center;
   align-items: center;
 }
-
 
 /* Styling for the title above the slider */
 .special-deals-title {
@@ -69,14 +165,16 @@ p:first-child {
 }
 
 .slide img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   padding: 5px;
 }
 
 /* Common styling for both previous and next navigation buttons */
-.deal-button-prev, .deal-button-next {
+.deal-button-prev,
+.deal-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -85,7 +183,8 @@ p:first-child {
   color: white;
   border: none; /* Remove default button borders */
 
-  width: 40px; height: 40px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   z-index: 1;
   border-radius: 50%;
