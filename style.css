@@ -84,14 +84,17 @@ body {
 }
 
 /* General section styling */
+
+/* Special Deals */
+
 .featured-deals-container {
   position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-items: left;
-  padding: 10px 20px;
+  justify-items: center;
+  padding: 20px 30px;
   gap: 20px;
 }
 
@@ -103,30 +106,39 @@ p:first-child {
 .deals-background {
   width: 100%;
   height: 100%;
-  /* Sets to fill the available space */
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #bed898;
 }
 
 /* Styling for the title above the slider */
 .special-deals-title {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2em;
-  color: #b5651d;
+  margin-top: 40px;
+  font-family: StardosStencil, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #151515;
+  display: inline-block;
+  background: #fff;
+  border: 2px solid #fdfdfd;
+  padding: 10px 30px;
 }
 
 /* Main container for the slider - this holds the images and navigation buttons */
 .deals-slider-container {
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
+  margin-bottom: 30px;
   overflow: visible;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  gap: 40px;
 }
 
 /* Flexbox container that holds all the slides */
@@ -147,6 +159,7 @@ p:first-child {
   object-fit: cover;
   border-radius: 10px;
   padding: 5px;
+
 }
 
 /* Common styling for both previous and next navigation buttons */
@@ -158,19 +171,21 @@ p:first-child {
 
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  border: none; /* Remove default button borders */
+  border: none;
+  
+ /* Remove default button borders */
 
   width: 40px;
   height: 40px;
   cursor: pointer;
   z-index: 1;
+
   border-radius: 50%;
-
   transition: background-color 0.3s ease;
-
   display: flex;
   justify-content: center;
-  align-items: center; /* icons centering */
+  align-items: center;
+  /* icons centering */
 }
 
 /* Positioning the previous button to the left */
@@ -188,10 +203,12 @@ p:first-child {
 /* Container for the dot indicators below the slider */
 .deal-dots-container {
   margin-top: 20px;
+  
   /* Space above the dots */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 /* Common styling for each individual dot */
@@ -200,7 +217,8 @@ p:first-child {
   width: 15px;
   margin: 0 5px;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%; /* Makes the dots round */
+  border-radius: 50%;
+  /* Makes the dots round */
   display: inline-block;
   cursor: pointer;
 }
@@ -208,4 +226,453 @@ p:first-child {
 /* Styling for the active dot - indicates the current slide */
 .deal-dot.active {
   background-color: green;
+}
+
+/* Navbar styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo img {
+  width: 165px;
+  height: 50px;
+  margin-right: 115px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header nav {
+  flex-grow: 1;
+}
+
+.nav-links li a {
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links li:first-child {
+  border-bottom: 7px solid #b5d8b3;
+}
+
+@media (max-width: 1000px) {
+  .nav-links li a {
+    font-size: 24px;
+  }
+
+  .logo img {
+    width: 132px;
+    height: 40px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .logo img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+  }
+}
+/* Blog Section */
+.blog {
+  padding: 50px 40px;
+  font-size: medium;
+}
+
+.blog h2 {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3em;
+  color: black;
+  background-color: white;
+  border: #ffeddd 3px solid;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog img {
+  width: 100%; height: 260px;
+
+  border-radius: 2px;
+  box-shadow: -5px 5px 2px rgb(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.blog-post {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1rem;
+
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: -5px 5px 2px rgb(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.blog-post p {
+  font-weight: normal;
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.blog-post a {
+  font-weight: bold;
+  font-size: small;
+  color: black;
+  text-decoration: none;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 60px; 
+  align-items: center; 
+  padding: 80px 60px;
+  background-color: #b8d4bf;
+  min-height: 100vh; 
+}
+
+.about-image {
+  position: relative;
+  height: 700px; 
+  width: 100%;
+}
+
+/* Individual image containers - positioned absolutely for overlap */
+.image-large, .image-small {
+  position: absolute;
+  overflow: hidden;
+}
+
+.image-large {
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 60%;
+  z-index: 2;
+}
+
+.image-small {
+  bottom: 0;
+  left: 30%; 
+  width: 70%;
+  height: 60%;
+  z-index: 1; 
+}
+
+.image-large img,
+.image-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Heading */
+.about-content h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+  background-color: white;
+  padding: 20px 40px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.about-content p {
+  line-height: 1.8;
+  color: #000;
+  margin: 0;
+  text-align: right;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 18px 50px;
+  cursor: pointer;
+  border-radius: 8px;
+  justify-self: right;
+  grid-column: 2; 
+}
+.store {
+  background-color: #b5d8b3;
+   /*position: relative;*/
+  padding: 3rem;
+   text-align: center;
+}
+
+.store h2 {
+  font-size: 3rem;
+  background-color: #fff;
+  padding: 0.2em 0.5em;
+  margin: 2rem 2rem 3rem 1rem;
+  display: inline-block;
+}
+
+.store-button {
+  display: inline-block;
+  padding: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.store-button a {
+  display: inline-block;
+  background-color: #3b2a1a;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+}
+
+
+.store-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.store-card {
+  text-align: center;
+}
+
+.store-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -2.5rem;
+}
+
+/* Common Styling for the footer section */
+ footer {
+  background-color: #c0e0bb;
+  padding: 20px;
+  size: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: white 40px solid;
+}
+
+/* Styling for the left footer section */
+
+/* Styling for the contact us section */
+.contact-us {
+  display: flex;
+  background: #b5d8b3;
+  justify-content: center;
+  gap: 100px;
+  padding-bottom: 40px;
+  align-items: flex-end;
+}
+
+.contact-map {
+  width: 620px;
+  height: 620px;
+  background: #dfdfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-map iframe {
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 450px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form h2 {
+  font-family: "Stardos Stencil", system-ui;
+  font-size: 54px;
+  background: white;
+  width: 350px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 85px;
+}
+
+.contact-form input {
+  margin-bottom: 25px;
+  height: 50px;
+  padding: 18px 20px 12px 20px;
+  font-size: 16px;
+  background: #eeeeee;
+  border: 4px solid #dfdfdf;
+  font-family: "Source Code Pro", monospace;
+}
+
+.contact-form input::placeholder {
+  color: #a2a2a2;
+}
+
+.contact-form textarea::placeholder {
+  color: #a2a2a2;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form textarea {
+  margin-bottom: 40px;
+  height: 233px;
+  padding: 18px 20px 12px 20px;
+  font-size: 16px;
+  background: #eeeeee;
+  border: 4px solid #dfdfdf;
+  font-family: "Source Code Pro", monospace;
+  resize: none;
+}
+
+.contact-form button {
+  margin-bottom: 35px;
+  width: 240px;
+  height: 75px;
+  border-radius: 10px;
+  background: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #f8eed3;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 1175px) {
+  .contact-map {
+    width: 500px;
+    height: 500px;
+  }
+
+  .contact-map iframe {
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+  }
+
+  .contact-form {
+    width: 350px;
+  }
+
+  .contact-us {
+    gap: 50px;
+  }
+
+  .contact-form h2 {
+    font-size: 40px;
+    width: 250px;
+    height: 70px;
+    margin-bottom: 40px;
+  }
+
+  .contact-form button {
+    margin-bottom: 0;
+    width: 175px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-map {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contact-map iframe {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+  }
+
+  .contact-form {
+    width: 300px;
+  }
+
+  .contact-us {
+    gap: 30px;
+  }
+
+  .contact-us {
+    align-items: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .contact-us {
+    flex-direction: column;
+  }
+
+  .contact-form, .contact-form h2 {
+    width: 350px; 
+  }
 }
