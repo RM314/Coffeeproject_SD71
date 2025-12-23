@@ -15,12 +15,126 @@
 <body>
     <header>
         <!-- Navbar -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/coffee-brand-logo.png" alt="Coffee Brand Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!-- Hero Section(The coffee) -->
+        <section class="hero">
+            <h1 id="heading">The Coffee</h1>
+            <p class="subheading">
+                The art of coffee in your cup
+            </p>
+            <p class=normal_text>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore debitis delectus
+                excepturi autem accusantium sit id adipisci natus dolore.
+            </p>
+            <a href="#" class="bigblacklink">RESERVE HERE</a>
+        </section>
         <!-- About Us -->
+        <section>
+            <div class="about-image">
+                <div class="image-large">
+                    <img src="assets/about-img-1.jpg" alt="About Us Image">
+                </div>
+                <div class="image-small">
+                    <img src="assets/about-img-2.jpg" alt="About Us Image 2">
+                </div>
+            </div>
+            <!-- About Us Content -->
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aperiam! Voluptatum numquam porro
+                    ipsam illum praesentium adipisci expedita neque quasi iusto repellendus a, omnis nihil nam earum
+                    harum. Quis, eum.</p>
+
+            </div>
+            <button class="btn">Read More</button>
+
+        </section>
         <!-- Gift Voucher -->
+         <section class="voucher">
+            <h1 id="heading">Gift Voucher</h1>
+            <p class=normal_text>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati minus voluptatibus veniam.
+            </p>
+            <a href="#" class="bigblacklink">CLAIM VOUCHER HERE</a>
+            <p class="advert">
+                1 Free Cup of Coffee
+            </p>
+        </section>
         <!-- Special Deals -->
+        <section class="special-deals">
+            <div class="deals-backgrounFd">
+                <h2 class="special-deals-title">Special Deals</h2>
+
+                <div class="featured-deals-container">
+                    <div class="item">
+                        <p>Flat White</p>
+                        <p>15% off</p>
+                    </div>
+                    <div class="item">
+                        <p>Latte</p>
+                        <p>15% off</p>
+                    </div>
+                    <div class="item">
+                        <p>Cappuccino</p>
+                        <p>15% off</p>
+                    </div>
+                    <div class="item">
+                        <p>Matcha</p>
+                        <p>15% off</p>
+                    </div>
+                </div>
+
+                <div class="deals-slider-container">
+                    <div class="slider">
+
+                        <div class="slide">
+                            <img src="assets/deal-img1.jpg" alt="Deal Image 1">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/deal-img2.jpg" alt="Deal Image 2">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/deal-img3.jpg" alt="Deal Image 3">
+                        </div>
+
+                    </div>
+
+                    <button class="deal-button-prev">&#10094;</button>
+                    <button class="deal-button-next">&#10095;</button>
+
+                </div>
+
+                <div class="deal-dots-container">
+                    <span class="deal-dot" data-slide="0"></span>
+                    <span class="deal-dot" data-slide="1"></span>
+                    <span class="deal-dot" data-slide="2"></span>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+
+                <script src="src/deals-slide-script.js"></script>
+            </div> <!-- deals background -->
+        </section>
+
         <!-- Our Coffee -->
         <section class="coffee-section">
             <div class="coffee-wrapper">
@@ -40,7 +154,8 @@
         <!-- Store -->
         <section class="store">
             <h2>Store</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
             <div class="store-cards">
                 <div class="store-card">
                     <img src="assets/store-img1.jpg" alt="Store image 1">
@@ -62,7 +177,8 @@
         <!-- Blog -->
         <section class="blog">
             <h2>Blog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
             <div class="blog-cards">
                 <div class="blog-card">
                     <img src="assets/blog-img1.jpg" alt="Blog image 1">
@@ -86,11 +202,71 @@
                     </div>
                 </div>
             </div>
+            </>
         </section>
         <!-- Contact Us -->
+        <section class="contact-us">
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps?q=New+York&output=embed" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" id="name" placeholder="Your name">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Messages" rows="6" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <section class="left-footer-section">
+            <p>logo</p>
+            <!-- Please add Logo file when available-->
+            <!-- <img src="assets/logo-white.svg" alt="The Coffee Logo"> -->
+        </section>
+        <section class="middle-footer-section">
+            <h1>The Coffee</h1>
+            <a href="https://maps.google.com/?q=354+Cullen+Boulevard+Houston+TX+77003" target="_blank">
+            <p>354 Cullen Boulevard,</p>
+            <p>Houston, TX 77003</p>
+            </a>
+            <a href="tel:+18328675309">
+            <p>+1 832-867-5309</p>
+            </a>
+            <a href="mailto:hello@coffeeshop.com">
+            <p>hello@coffeeshop.com</p>
+            </a>
+            <div class="social-icons">
+                <a href="#"><img src="assets/icon-instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="assets/icon-facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="assets/icon-twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="assets/icon-whatsapp.svg" alt="WhatsApp"></a>
+            </div>
+
+            <div class="legal-links">
+                <a href="#">TERMS & CONDITIONS</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">COOKIE POLICY</a>
+            </div>
+        </section>
+        <section class="right-footer-section">
+            <ul class="footer-links">
+                <li><a href="#">SITEMAP</a></li> 
+                <!-- ^Can be later selected as .footer-links:first-child -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </section>
+        
+    </footer>
 
 </body>
 
