@@ -299,6 +299,59 @@ p:first-child {
   justify-self: right;
   grid-column: 2; 
 }
+.store {
+  background-color: #b5d8b3;
+   /*position: relative;*/
+  padding: 3rem;
+   text-align: center;
+}
+
+.store h2 {
+  font-size: 3rem;
+  background-color: #fff;
+  padding: 0.2em 0.5em;
+  margin: 2rem 2rem 3rem 1rem;
+  display: inline-block;
+}
+
+.store-button {
+  display: inline-block;
+  padding: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.store-button a {
+  display: inline-block;
+  background-color: #3b2a1a;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+}
+
+
+.store-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.store-card {
+  text-align: center;
+}
+
+.store-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -2.5rem;
+}
+
 /* Common Styling for the footer section */
  footer {
   background-color: #c0e0bb;
