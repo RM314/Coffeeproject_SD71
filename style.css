@@ -69,23 +69,27 @@ p:first-child {
 }
 
 .slide img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   padding: 5px;
 }
 
 /* Common styling for both previous and next navigation buttons */
-.deal-button-prev, .deal-button-next {
+.deal-button-prev,
+.deal-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  border: none; /* Remove default button borders */
+  border: none;
+  /* Remove default button borders */
 
-  width: 40px; height: 40px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   z-index: 1;
   border-radius: 50%;
@@ -94,7 +98,8 @@ p:first-child {
 
   display: flex;
   justify-content: center;
-  align-items: center; /* icons centering */
+  align-items: center;
+  /* icons centering */
 }
 
 /* Positioning the previous button to the left */
@@ -124,7 +129,8 @@ p:first-child {
   width: 15px;
   margin: 0 5px;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%; /* Makes the dots round */
+  border-radius: 50%;
+  /* Makes the dots round */
   display: inline-block;
   cursor: pointer;
 }
@@ -132,4 +138,77 @@ p:first-child {
 /* Styling for the active dot - indicates the current slide */
 .deal-dot.active {
   background-color: green;
+}
+
+/* Navbar styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo img {
+  width: 165px;
+  height: 50px;
+  margin-right: 115px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header nav {
+  flex-grow: 1;
+}
+
+.nav-links li a {
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links li:first-child {
+  border-bottom: 7px solid #b5d8b3;
+}
+
+@media (max-width: 1000px) {
+  .nav-links li a {
+    font-size: 24px;
+  }
+
+  .logo img {
+    width: 132px;
+    height: 40px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .logo img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+  }
 }
