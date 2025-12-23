@@ -10,14 +10,17 @@ body {
 }
 
 /* General section styling */
+
+/* Special Deals */
+
 .featured-deals-container {
   position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-items: left;
-  padding: 10px 20px;
+  justify-items: center;
+  padding: 20px 30px;
   gap: 20px;
 }
 
@@ -29,12 +32,12 @@ p:first-child {
 .deals-background {
   width: 100%;
   height: 100%;
-  /* Sets to fill the available space */
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #bed898;
 }
 
 
@@ -42,18 +45,27 @@ p:first-child {
 .special-deals-title {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 2em;
-  color: #b5651d;
+  margin-top: 40px;
+  font-family: StardosStencil, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #151515;
+  display: inline-block;
+  background: #fff;
+  border: 2px solid #fdfdfd;
+  padding: 10px 30px;
 }
 
 /* Main container for the slider - this holds the images and navigation buttons */
 .deals-slider-container {
   position: relative;
-  width: 80%;
+  width: 100%;
   max-width: 800px;
+  margin-bottom: 30px;
   overflow: visible;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  gap: 40px;
 }
 
 /* Flexbox container that holds all the slides */
@@ -69,32 +81,39 @@ p:first-child {
 }
 
 .slide img {
-  width: 100%; height: 100%;
+  width: 85%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
   padding: 5px;
+
 }
 
 /* Common styling for both previous and next navigation buttons */
-.deal-button-prev, .deal-button-next {
+
+.deal-button-prev,
+.deal-button-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  border: none; /* Remove default button borders */
+  border: none;
 
-  width: 40px; height: 40px;
+  /* Remove default button borders */
+
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   z-index: 1;
+
   border-radius: 50%;
-
   transition: background-color 0.3s ease;
-
   display: flex;
   justify-content: center;
-  align-items: center; /* icons centering */
+  align-items: center;
+  /* icons centering */
 }
 
 /* Positioning the previous button to the left */
@@ -112,10 +131,12 @@ p:first-child {
 /* Container for the dot indicators below the slider */
 .deal-dots-container {
   margin-top: 20px;
+  
   /* Space above the dots */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 /* Common styling for each individual dot */
@@ -124,7 +145,8 @@ p:first-child {
   width: 15px;
   margin: 0 5px;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 50%; /* Makes the dots round */
+  border-radius: 50%;
+  /* Makes the dots round */
   display: inline-block;
   cursor: pointer;
 }
@@ -276,4 +298,94 @@ p:first-child {
   border-radius: 8px;
   justify-self: right;
   grid-column: 2; 
+}
+/* Common Styling for the footer section */
+ footer {
+  background-color: #c0e0bb;
+  padding: 20px;
+  size: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: white 40px solid;
+}
+
+/* Styling for the left footer section */
+
+
+.left-footer-section {
+  display: inline-block;
+  justify-content: left;
+  margin: 20px 20px;
+  gap: 20px;
+  size: 0.5rem;
+}
+.footer-logo {
+  width: 200px;
+  height: auto;
+}
+
+/* Styling for the middle footer section */
+
+.middle-footer-section h1 {
+  text-align: center;
+  size: 0.5rem;  
+}
+.middle-footer-section p {
+  text-align: center;
+  size: 0.5rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+.middle-footer-section a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+}
+.middle-footer-section a:hover {
+  text-decoration: underline;
+} 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  margin-top: 10px;
+} 
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.legal-links a {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the right footer section */
+
+.right-footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  gap: 10px;
+  margin: 20px 20px 20px 0;
+  line-height: 2.5rem;
+
+}
+.right-footer-section a {
+
+  text-decoration: none;
+  color: inherit;
+}
+.right-footer-section li {
+  list-style-type: none;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.right-footer-section li:first-child {
+  margin-bottom: 1.8rem;
 }
