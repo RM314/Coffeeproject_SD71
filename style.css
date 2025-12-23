@@ -133,3 +133,94 @@ p:first-child {
 .deal-dot.active {
   background-color: green;
 }
+
+/* Common Styling for the footer section */
+ footer {
+  background-color: #c0e0bb;
+  padding: 20px;
+  size: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: white 40px solid;
+}
+
+/* Styling for the left footer section */
+
+
+.left-footer-section {
+  display: inline-block;
+  justify-content: left;
+  margin: 20px 20px;
+  gap: 20px;
+  size: 0.5rem;
+}
+.footer-logo {
+  width: 200px;
+  height: auto;
+}
+
+/* Styling for the middle footer section */
+
+.middle-footer-section h1 {
+  text-align: center;
+  size: 0.5rem;  
+}
+.middle-footer-section p {
+  text-align: center;
+  size: 0.5rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+.middle-footer-section a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+}
+.middle-footer-section a:hover {
+  text-decoration: underline;
+} 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  margin-top: 10px;
+} 
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.legal-links a {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the right footer section */
+
+.right-footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  gap: 10px;
+  margin: 20px 20px 20px 0;
+  line-height: 2.5rem;
+
+}
+.right-footer-section a {
+
+  text-decoration: none;
+  color: inherit;
+}
+.right-footer-section li {
+  list-style-type: none;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.right-footer-section li:first-child {
+  margin-bottom: 1.8rem;
+}
