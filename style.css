@@ -156,8 +156,204 @@ p:first-child {
   background-color: green;
 }
 
-/* Styling for the contact us section */
+/* Navbar styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.logo img {
+  width: 165px;
+  height: 50px;
+  margin-right: 115px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header nav {
+  flex-grow: 1;
+}
+
+.nav-links li a {
+  font-size: 30px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links li:first-child {
+  border-bottom: 7px solid #b5d8b3;
+}
+
+@media (max-width: 1000px) {
+  .nav-links li a {
+    font-size: 24px;
+  }
+
+  .logo img {
+    width: 132px;
+    height: 40px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .logo img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+  }
+}
+/* Blog Section */
+.blog {
+  padding: 50px 40px;
+  font-size: medium;
+}
+
+.blog h2 {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3em;
+  color: black;
+  background-color: white;
+  border: #ffeddd 3px solid;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog img {
+  width: 100%; height: 260px;
+
+  border-radius: 2px;
+  box-shadow: -5px 5px 2px rgb(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.blog-post {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1rem;
+
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: -5px 5px 2px rgb(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.blog-post p {
+  font-weight: normal;
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.blog-post a {
+  font-weight: bold;
+  font-size: small;
+  color: black;
+  text-decoration: none;
+}
+.store {
+  background-color: #b5d8b3;
+   /*position: relative;*/
+  padding: 3rem;
+   text-align: center;
+}
+
+.store h2 {
+  font-size: 3rem;
+  background-color: #fff;
+  padding: 0.2em 0.5em;
+  margin: 2rem 2rem 3rem 1rem;
+  display: inline-block;
+}
+
+.store-button {
+  display: inline-block;
+  padding: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.store-button a {
+  display: inline-block;
+  background-color: #3b2a1a;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+}
+
+
+.store-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.store-card {
+  text-align: center;
+}
+
+.store-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -2.5rem;
+}
+
+/* Common Styling for the footer section */
+ footer {
+  background-color: #c0e0bb;
+  padding: 20px;
+  size: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: white 40px solid;
+}
+
+/* Styling for the left footer section */
+
+/* Styling for the contact us section */
 .contact-us {
   display: flex;
   background: #b5d8b3;
