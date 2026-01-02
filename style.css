@@ -133,3 +133,74 @@ p:first-child {
 .deal-dot.active {
   background-color: green;
 }
+
+.voucher {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #b5d8b3;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.voucher::before {
+  content: "";
+  position: absolute;
+  inset: 1rem;
+  border: 8px solid #fff;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.voucher::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url("assets/coffee-brain-caffeine-neuroscincces.jpg") right center / cover no-repeat;
+  z-index: 1;
+}
+
+.voucher > * {
+  position: relative;
+  z-index: 2;
+}
+
+.voucher h1 {
+  font-size: 3rem;
+  background-color: #fff;
+  padding: 0.2em 0.5em;
+  margin: 1rem 1rem;
+  display: inline-block;
+}
+
+.voucher .normal_text {
+  width: 45%;
+  text-align: right;
+}
+
+.bigblacklink {
+  display: inline-block;
+  background-color: #3b2a1a;
+  color: #fff;
+  padding: 1.0rem 1.0rem;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 8px;
+}
+
+.voucher .advert {
+  max-width: 10rem;
+  text-align: center;
+  position: absolute;
+  left: 65%;
+  top: 67%;
+  color: #fff;
+   background-color: #b5d8b3;
+   display: inline-block;
+  padding: 0.5rem 0.5rem;
+}
